@@ -1,0 +1,55 @@
+<html>
+    <head>
+        
+        <title>Gothons From Planet Percal #25</title>
+        <style>
+            #form {
+                top: 50%;
+                left: 50%;
+                width: 450px;
+                height: 450px;
+                position: absolute;
+                margin-top: -100px;
+                margin-left: -175px;
+            }
+            
+            #text {
+                top: 50%;
+                left: 50%;
+                width: 450px;
+                height: 450px;
+                position: absolute;
+                margin-top: -150px;
+                margin-left: -250px;
+            }
+        </style>
+          
+    </head>
+    
+    <body>
+        
+        <div id="text">
+            <p style="text-align: center; color: #C8C8C8; font-size: 15px; font-family: Verdana; font-style: italic">Welcome to the world of space! Enjoy!</p>
+        </div>
+
+        <div id="form">
+            <a href="/login">Login</a>
+            <br/>
+
+            <% if @errors %>
+                <% @errors.each do |error| %>
+                <%= error %>
+                <br/>
+                <% end %>
+            <% end %>
+
+            <form action="" method="POST">
+                <input type="text" name="username" placeholder="Your username">
+                <br/>
+                <input type="password" name="password" placeholder="Your password">
+                <br/>
+                <input type="submit" value="REGISTER!">
+            </form>
+        </div>
+    </body>
+</html>

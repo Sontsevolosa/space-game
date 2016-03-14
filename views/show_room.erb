@@ -1,0 +1,34 @@
+<html>
+    <head>
+        
+        <title>Gothons From Planet Percal #25</title>
+          
+    </head>
+    
+    <body>
+        
+        <br/>
+        <div style="float: right; margin-top: auto; display: inline"><a href="/logout">Log Out</a></div>
+        <div style="text-align: left; margin-top: auto; color: #C8C8C8; font-size: 13px; font-family: Verdana; font-style: italic">Hello, <%= current_user.username %>! Forward toward adventure!</div>
+        
+              
+        
+        <h1> <%= room.name %> </h1>
+      
+
+        <pre title="<%= room.tooltip %>">
+        <%= room.description %>
+        </pre>
+
+        <% if room.name == "death" || room.name == "The End" || room.name == "R.I.P." %>
+        <p><a href="/">Play Again?</a></p>
+        <% else %>
+        <p>
+            <form action="/game" method="POST">
+            - <input type="text" name="action" placeholder="Your answer"> <input type="SUBMIT" value="Submit">
+            </form>
+        </p>
+        <% end %>
+
+    </body>
+</html>

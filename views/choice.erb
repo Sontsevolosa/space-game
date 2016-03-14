@@ -1,0 +1,45 @@
+<html>
+    <head>
+        
+        <title>Gothons From Planet Percal #25</title>
+        <style>
+            #choice {
+                top: 50%;
+                left: 50%;
+                width: 450px;
+                height: 450px;
+                position: absolute;
+                margin-top: -90px;
+                margin-left: -134px;
+            }
+            
+            #text {
+                top: 50%;
+                left: 50%;
+                width: 450px;
+                height: 450px;
+                position: absolute;
+                margin-top: -130px;
+                margin-left: -250px;
+            }
+        </style>
+          
+    </head>
+    
+    <body>
+        
+<br/>
+        <div style="float: right; margin-top: auto; display: inline"><a href="/logout">Log Out</a></div>
+        <div style="text-align: left; margin-top: auto; color: #C8C8C8; font-size: 13px; font-family: Verdana; font-style: italic">Hello, <%= current_user.username %>! Forward toward adventure!</div>
+
+
+
+<div id="text"> 
+<p style="text-align: center; color: #C8C8C8; font-size: 15px; font-family: Verdana">Select a game which you want:</p>
+</div>
+<div id="choice">
+<a href="/long">Long Game</a> or <a href="/short">Short Game</a>
+</div>
+
+</body>
+</html>
