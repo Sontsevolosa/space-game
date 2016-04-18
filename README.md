@@ -1,5 +1,5 @@
 # Space game
-Interesting game about space adventures written on Sinatra framework with simple interface from scratch
+Interesting game about space adventures written on Sinatra framework with simple interface from scratch.
 <br/><br/>
 Project includes:
 - automated tests;
